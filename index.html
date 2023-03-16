@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stykesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
@@ -27,6 +27,61 @@
         
         <p id="currentDay" class="lead"></p>
       </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 search">
+            <h2>Search</h2>
+            <!-- tbd: form , search city button with input, search history
+            container and buttons go here -->
+          </div>
+          <div  class="col-md-9 ">
+            <div class="current">
+                <h2> Current Conditions</h2>
+                <!-- tbd: have to add more  id's  so   that you can access and write values
+                that come from API response -->
+                <h3>City Name WeatherIcon </h3>
+                <p> Temp: </p>
+                <p> Humidity: </p>
+                <p> Wind: </p>
+            </div>
+            <div class="row forecast">
+                <h2> 5 Day Forecast</h2>
+                <div class="col-md-2 day1">
+                    <h6>Date 1  WeatherIcon </h6>
+                    <p> Temp: </p>
+                    <p> Humidity: </p>
+                    <p> Wind: </p>
+                </div>
+                <div class="col-md-2 day2">
+                    <h6>Date 2  WeatherIcon </h6>
+                    <p> Temp: </p>
+                    <p> Humidity: </p>
+                    <p> Wind: </p>
+                </div>
+                <div class="col-md-2 day3">
+                    <h6>Date 3  WeatherIcon </h6>
+                    <p> Temp: </p>
+                    <p> Humidity: </p>
+                    <p> Wind: </p>
+                </div>
+                <div class="col-md-2 day4">
+                    <h6>Date 4  WeatherIcon </h6>
+                    <p> Temp: </p>
+                    <p> Humidity: </p>
+                    <p> Wind: </p>
+                </div>
+                <div class="col-md-2 day5">
+                    <h6>Date 5  WeatherIcon </h6>
+                    <p> Temp: </p>
+                    <p> Humidity: </p>
+                    <p> Wind: </p>
+                </div>
+            </div>
+          </div>
+   
+        </div>
+      </div>
     <script  src="./script.js"> </script>
 
 

@@ -1,0 +1,40 @@
+.search {
+    height : 100vh;
+    background-color: aquamarine;
+}
+
+.current {
+    height : 35vh;
+    background-color: yellow;
+}
+
+.forecast {
+    
+    background-color: yellowgreen;
+}
+
+.day1 {
+    height : 65vh;
+    background-color: blueviolet;
+    margin: 2px;
+}
+.day2 {
+    height : 65vh;
+    background-color: lightcyan;
+    margin: 2px
+}
+.day3 {
+    height : 65vh;
+    background-color: lightgrey;
+    margin: 2px;
+}
+.day4 {
+    height : 65vh;
+    background-color: lightslategray;
+    margin: 2px;
+}
+.day5 {
+    height : 65vh;
+    background-color: lightyellow;
+    margin: 2px;
+}
