@@ -1,5 +1,5 @@
 const apiKey = "bc7696a82d6df78862740451e4d87874";
-let cityName = "Corona"
+let cityName = "Los angeles"
 const citySearchUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}`
 
 async function getWeatherData() {
