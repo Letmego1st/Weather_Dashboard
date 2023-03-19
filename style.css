@@ -1,40 +1,46 @@
-.search {
-    height : 100vh;
-    background-color: aquamarine;
+html, body, .container-fluid, .content-row {
+    height: 100%;
+    background-color:smoke rgb(131, 127, 127)
 }
 
-.current {
-    height : 35vh;
-    background-color: yellow;
+.hide {
+    display: none;
 }
 
-.forecast {
-    
-    background-color: yellowgreen;
+.city-btn:hover {
+    background-color: light rgb(189, 133, 242);
+    cursor: pointer;
 }
 
-.day1 {
-    height : 65vh;
-    background-color: blueviolet;
-    margin: 2px;
+.card {
+    background-color: rgb(205, 246, 246);
 }
-.day2 {
-    height : 65vh;
-    background-color: lightcyan;
-    margin: 2px
-}
-.day3 {
-    height : 65vh;
-    background-color: lightgrey;
-    margin: 2px;
-}
-.day4 {
-    height : 65vh;
-    background-color: lightslategray;
-    margin: 2px;
-}
-.day5 {
-    height : 65vh;
-    background-color: lightyellow;
-    margin: 2px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
