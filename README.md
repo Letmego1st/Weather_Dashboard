@@ -57,7 +57,10 @@ https://letmego1st.github.io/Weather_Dashboard/
 
 References:
 Udemy: Web API's JavaScript Fetch getting JSON Data fun with API's
+
 Youtube - Build a Weather App with Javascript in 6 mins
+
 https://github.com/KateMcRo
+
 Week 6 reading assignment
 
