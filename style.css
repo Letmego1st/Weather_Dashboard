@@ -1,6 +1,6 @@
 html, body, .container-fluid, .content-row {
     height: 100%;
-    background-color:smoke rgb(131, 127, 127)
+    background-color:smoke rgb(131, 124, 124)
 }
 
 .hide {
@@ -13,7 +13,7 @@ html, body, .container-fluid, .content-row {
 }
 
 .card {
-    background-color: rgb(205, 246, 246);
+    background-color: rgb(208, 243, 240);
 }
 
 
