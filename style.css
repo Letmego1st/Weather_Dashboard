@@ -14,7 +14,14 @@ html, body, .container-fluid, .content-row {
 
 .card {
     background-color: rgb(208, 243, 240);
+     margin-bottom: 10px; /* Added margin for spacing between forecast boxes */
+    height: 100%; /* Ensure consistent height for all cards */
 }
+
+.card-body {
+    height: 100%; /* Ensure content fills the card height */
+}
+
 
 
 
