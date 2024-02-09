@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
 </head>
 <body>
+    
     <div class="container-fluid">
         <div class="row navbar navbar-dark bg-dark">
             <div class="col-12 text-center">
@@ -38,8 +39,14 @@
                         
                         
                     </ul>
-                    <button id="searchBtn" class="btn btn-sm btn-secondary hide">Clear History</button>
+                    <div id="search-history-list" class="list-group">
+                        <!-- Search history items will be appended here -->
+                    </div>
+                    <button id="clear-history" class="btn btn-danger">Clear History</button>
+
+                    <button id="searchBtn" class="btn btn-sm btn-secondary hide" >Clear History</button>
                 </div>
+                
             </div>
             <div id="weatherContent" class="col-12 col-md-9 hide">
                 <div class="row">
@@ -68,7 +75,7 @@
                             <h5 class="card-title">Date</h5>
                             <i class="fa fa-sun"></i>
                             <p class="card-text">Temp: </p>
-                            <p class="card-text">Humidity: </p>
+                            <p class="card-text">%rh: </p>
                             </div>
                         </div>
                     </div>
@@ -77,94 +84,41 @@
         </div>
     </div>
     <script src="./script.js"></script>
+
+
+<script>// Function to save search history
+    function saveSearchHistory(city) {
+        let searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
+        searchHistory.push(city);
+        localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+    }
+    
+    // Function to display search history
+    function displaySearchHistory() {
+        let searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
+        let list = document.getElementById('searchHistoryList');
+        list.innerHTML = ''; // Clear previous search history
+        searchHistory.forEach(function(city) {
+            let listItem = document.createElement('li');
+            listItem.textContent = city;
+            list.appendChild(listItem);
+        });
+    }
+    
+    // Function to handle search button click
+    document.getElementById('searchCityButton').addEventListener('click', function() {
+        let city = document.getElementById('searchCity').value;
+        saveSearchHistory(city);
+        displaySearchHistory();
+    });
+    
+    // Initial display of search history
+    displaySearchHistory();
+    </script>
+
+
+
+
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
